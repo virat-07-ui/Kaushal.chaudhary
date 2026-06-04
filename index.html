@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Kanchan Didi ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles-container"></div>
+<div id="hearts-container"></div>
+
+<!-- INTRO -->
+
+<section class="page active" id="intro">
+
+<h1 class="main-title">
+For My Amazing Didi ❤️
+</h1>
+
+<p class="sub-title">
+A Small Surprise For Kanchan Didi
+</p>
+
+<button class="premium-btn"
+onclick="goToPage('story1')">
+
+Open Surprise ✨
+
+</button>
+
+</section>
+
+<!-- STORY 1 -->
+
+<section class="page" id="story1">
+
+<div class="glass-card">
+
+<h2 class="typewriter">
+
+Someone Very Special Deserves This...
+
+</h2>
+
+<p>
+
+Not everyone gets a sister
+who cares this much.
+
+</p>
+
+<button class="premium-btn"
+onclick="goToPage('story2')">
+
+Continue
+
+</button>
+
+</div>
+
+</section>
+
+<!-- STORY 2 -->
+
+<section class="page" id="story2">
+
+<img src="kanchan1.jpg"
+class="hero-image">
+
+<div class="overlay-card">
+
+<h2>
+My Favorite Notification 📱❤️
+</h2>
+
+<p>
+Some notifications are important,
+hers are special ✨
+</p>
+</div>
+
+<button class="premium-btn"
+onclick="goToPage('story3')">
+
+Next
+
+</button>
+
+</section>
+
+<!-- STORY 3 -->
+
+<section class="page" id="story3">
+
+<img src="kanchan2.jpg"
+class="hero-image">
+
+<div class="overlay-card">
+
+<h2>
+The Prettiest Part Of My Memories 📸🌸
+</h2>
+
+<p>
+Making ordinary moments
+feel a little special ✨
+</p>
+
+</div>
+
+<button class="premium-btn"
+onclick="goToPage('letter')">
+
+Continue
+
+</button>
+
+</section>
+<!-- LETTER PAGE -->
+
+<section class="page" id="letter">
+
+<div class="letter-box">
+
+<h1 class="letter-title">
+Dear Kanchan Didi ❤️
+</h1>
+
+<p class="letter-text">
+
+Some people bring good vibes. You bring good vibes, bad jokes, and unforgettable memories. 😂❤️<br>
+Not all chaos is bad... some of it is named Kanchan. 😜✨<br>
+The person who turned "just a friend" into countless memories. 🌸❤️<br>
+A good friend is rare. A friend like you is even rarer. 🌸✨<br>
+
+This little surprise is simply my way
+of saying...
+
+</p>
+
+<h2 class="thank-you">
+Thank You For Everything ❤️
+</h2>
+
+<button class="premium-btn"
+onclick="goToPage('gallery')">
+
+See Our Memories ✨
+
+</button>
+
+</div>
+
+</section>
+
+<!-- MEMORY GALLERY -->
+
+<section class="page" id="gallery">
+
+<h1 class="gallery-title">
+Our Beautiful Memories 📸
+</h1>
+
+<div class="slideshow">
+    <img id="slideImage" src="image8.jpg">
+</div>
+<div class="memory-grid">
+
+<div class="memory-card">
+<img src="image1.jpg">
+<div class="memory-overlay">
+Best Sister Ever ❤️
+</div>
+</div>
+
+<div class="memory-card">
+<img src="image2.jpg">
+<div class="memory-overlay">
+My Biggest Support ✨
+</div>
+</div>
+
+<div class="memory-card">
+<img src="image3.jpg">
+<div class="memory-overlay">
+Always There For Me 💖
+</div>
+</div>
+
+<div class="memory-card">
+<img src="image8.jpg">
+<div class="memory-overlay">
+My Inspiration 🌹
+</div>
+</div>
+
+<div class="memory-card">
+<img src="image6.jpg">
+<div class="memory-overlay">
+Forever Grateful 😊
+</div>
+</div>
+
+<div class="memory-card">
+<img src="image7.jpg">
+<div class="memory-overlay">
+Lots Of Love Didi 💕
+</div>
+</div>
+
+</div>
+
+<button class="premium-btn"
+onclick="goToPage('final')">
+
+One Last Message ❤️
+
+</button>
+
+</section>
+
+<!-- FINAL PAGE -->
+
+<section class="page" id="final">
+
+<div class="final-box">
+
+<h1 class="final-title">
+Kanchan Didi ❤️
+</h1>
+
+<h2 class="final-subtitle">
+
+You Are Truly Special
+
+</h2>
+
+<p class="final-text">
+
+No matter where life takes us,
+
+I will always be thankful
+for having a sister like you.
+
+Your kindness,
+your support,
+and your love
+mean more than words can express.
+
+</p>
+
+<h1 class="love-text">
+    
+    Love you didi ✨
+    
+</h1>
+
+<button class="premium-btn"
+onclick="location.reload()">
+
+Replay Surprise ✨
+
+</button>
+
+</div>
+
+</section>
+
+
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUSIC BUTTON -->
+
+<button id="musicBtn"
+onclick="toggleMusic()"
+style="
+position:fixed;
+top:20px;
+right:20px;
+z-index:9999;
+padding:12px 18px;
+border:none;
+border-radius:50px;
+background:#ff6fa9;
+color:white;
+cursor:pointer;
+box-shadow:0 0 20px rgba(255,111,169,.5);
+">
+
+🎵 Music
+
+</button>
+
+<script src="script.js"></script>
+
+</body>
+</html>
